@@ -340,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X6GH7HXG96;
-				INFOPLIST_FILE = WhoWantstoBeaMillionaire/Info.plist;
+				INFOPLIST_FILE = WhoWantstoBeaMillionaire/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,7 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X6GH7HXG96;
-				INFOPLIST_FILE = WhoWantstoBeaMillionaire/Info.plist;
+				INFOPLIST_FILE = WhoWantstoBeaMillionaire/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
