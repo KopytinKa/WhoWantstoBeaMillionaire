@@ -17,7 +17,6 @@ final class QuestionsBuilder {
     
     func setNewQuestion() -> Self {
         self.questions.append(self.currentQuestion)
-        
         return self
     }
         
