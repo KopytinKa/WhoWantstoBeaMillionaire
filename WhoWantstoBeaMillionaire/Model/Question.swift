@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct Question {
-    let question: String
-    let answers: [String]
-    var correctAnswer: Int
-    var cashPrize: Int
+struct Question: Codable {
+    var question: String = ""
+    var answers: [String] = []
+    var correctAnswer: Int = 0
+    var cashPrize: Int = 100
     
     var resultWhenUseHintCallFriend: String {
         get {

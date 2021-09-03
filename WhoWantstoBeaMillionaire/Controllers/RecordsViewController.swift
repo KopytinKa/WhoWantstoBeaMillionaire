@@ -35,7 +35,7 @@ extension RecordsViewController: UITableViewDataSource {
         let cell = recordsTableView.dequeueReusableCell(withIdentifier: "RecordCellIdentifier", for: indexPath)
         let record = Game.shared.records[indexPath.row]
         cell.textLabel?.text = getCellDateText(forIndexPath: indexPath, andDate: record.date)
-        cell.detailTextLabel?.text = "Деньги: \(record.cashPrize) - Процент: \(String(format:"%.2f", record.percentOfCorrectAnswers * 100))"
+        cell.detailTextLabel?.text = "Деньги: \(record.cashPrize). Прогресс: \(String(format:"%.2f", record.percentOfCorrectAnswers * 100))%"
         return cell
     }
     
