@@ -13,7 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+        if Game.shared.questions.count <= 0 {
+            Game.shared.questions = Question.getCommonQuestions()
+        }
         return true
     }
 

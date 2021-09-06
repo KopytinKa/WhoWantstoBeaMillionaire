@@ -17,14 +17,40 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var questionTableView: UITableView!
     @IBOutlet weak var hintLabel: UILabel!
+    @IBOutlet weak var countQuestionsLabel: UILabel!
     
-    var questions = Game.shared.questions
+    var questions: [Question] = []
+    
+    private var orderOfQuestionsStrategy: OrderOfQuestionsStrategy {
+        switch Game.shared.difficulty {
+        case .random:
+            return RandomOrderOfQuestionsStrategy()
+        case .sequential:
+            return SequentialOrderOfQuestionsStrategy()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setQuestion()
         
         questionTableView.delegate = self
         questionTableView.dataSource = self
+        
+        if let gameSession = Game.shared.gameSession {
+            gameSession.countCorrectAnswers.addObserver(
+                self,
+                options: [.new, .initial],
+                closure: { [weak self] (countCorrectAnswers, _) in
+                    guard let self = self else { return }
+                    //let percentOfCorrectAnswers = Double(countCorrectAnswers) / Double(gameSession.countQuestions)
+                    self.countQuestionsLabel.text = "Вопрос №\(countCorrectAnswers + 1). Прогресс: \(String(format:"%.2f", gameSession.percentOfCorrectAnswers * 100))%"
+            })
+        }
+    }
+    
+    func setQuestion() {
+        self.questions = self.orderOfQuestionsStrategy.getQuestions()
     }
     
     @IBAction func useHintCallFriend(_ sender: Any) {
