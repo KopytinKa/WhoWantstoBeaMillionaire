@@ -14,11 +14,11 @@ class SettingsViewController: UIViewController {
     private var selectedDifficulty: Difficulty {
         switch self.difficultyControl.selectedSegmentIndex {
         case 0:
-            return .random
-        case 1:
             return .sequential
-        default:
+        case 1:
             return .random
+        default:
+            return .sequential
         }
     }
     

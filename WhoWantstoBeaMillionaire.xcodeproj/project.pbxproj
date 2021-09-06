@@ -10,7 +10,7 @@
 		8B2021E226DFD7F800FA1772 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2021E126DFD7F800FA1772 /* SettingsViewController.swift */; };
 		8B2021E426DFD8EA00FA1772 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2021E326DFD8EA00FA1772 /* Difficulty.swift */; };
 		8B2021E726DFE51E00FA1772 /* OrderOfQuestionsStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2021E626DFE51E00FA1772 /* OrderOfQuestionsStrategy.swift */; };
-		8B2021E926DFE69D00FA1772 /* RandowOrderOfQuestionsStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2021E826DFE69D00FA1772 /* RandowOrderOfQuestionsStrategy.swift */; };
+		8B2021E926DFE69D00FA1772 /* RandomOrderOfQuestionsStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2021E826DFE69D00FA1772 /* RandomOrderOfQuestionsStrategy.swift */; };
 		8B2021EB26DFE6A700FA1772 /* SequentialOrderOfQuestionsStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2021EA26DFE6A700FA1772 /* SequentialOrderOfQuestionsStrategy.swift */; };
 		8B2021ED26DFEB5B00FA1772 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2021EC26DFEB5B00FA1772 /* Observable.swift */; };
 		8B2021EF26E0D0A000FA1772 /* AddQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2021EE26E0D0A000FA1772 /* AddQuestionViewController.swift */; };
@@ -35,7 +35,7 @@
 		8B2021E126DFD7F800FA1772 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8B2021E326DFD8EA00FA1772 /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
 		8B2021E626DFE51E00FA1772 /* OrderOfQuestionsStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderOfQuestionsStrategy.swift; sourceTree = "<group>"; };
-		8B2021E826DFE69D00FA1772 /* RandowOrderOfQuestionsStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandowOrderOfQuestionsStrategy.swift; sourceTree = "<group>"; };
+		8B2021E826DFE69D00FA1772 /* RandomOrderOfQuestionsStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomOrderOfQuestionsStrategy.swift; sourceTree = "<group>"; };
 		8B2021EA26DFE6A700FA1772 /* SequentialOrderOfQuestionsStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequentialOrderOfQuestionsStrategy.swift; sourceTree = "<group>"; };
 		8B2021EC26DFEB5B00FA1772 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		8B2021EE26E0D0A000FA1772 /* AddQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionViewController.swift; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				8B2021E626DFE51E00FA1772 /* OrderOfQuestionsStrategy.swift */,
-				8B2021E826DFE69D00FA1772 /* RandowOrderOfQuestionsStrategy.swift */,
+				8B2021E826DFE69D00FA1772 /* RandomOrderOfQuestionsStrategy.swift */,
 				8B2021EA26DFE6A700FA1772 /* SequentialOrderOfQuestionsStrategy.swift */,
 			);
 			path = Strategies;
@@ -231,7 +231,7 @@
 				8B2021E426DFD8EA00FA1772 /* Difficulty.swift in Sources */,
 				8B2021E226DFD7F800FA1772 /* SettingsViewController.swift in Sources */,
 				8B2C2E7926DC145E00CDD11A /* RecordsViewController.swift in Sources */,
-				8B2021E926DFE69D00FA1772 /* RandowOrderOfQuestionsStrategy.swift in Sources */,
+				8B2021E926DFE69D00FA1772 /* RandomOrderOfQuestionsStrategy.swift in Sources */,
 				8B2C2E6F26DBA9B000CDD11A /* GameViewController.swift in Sources */,
 				8B2021F126E11C2E00FA1772 /* QuestionsCaretaker.swift in Sources */,
 				8B2C2E5F26D8F30900CDD11A /* MainMenuViewController.swift in Sources */,

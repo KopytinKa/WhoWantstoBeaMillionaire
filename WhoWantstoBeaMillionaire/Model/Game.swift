@@ -18,7 +18,7 @@ final class Game {
         }
     }
     
-    var difficulty: Difficulty = .random
+    var difficulty: Difficulty = .sequential
     
     var questions: [Question] {
         didSet {

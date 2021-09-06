@@ -9,6 +9,6 @@ import Foundation
 
 final class SequentialOrderOfQuestionsStrategy: OrderOfQuestionsStrategy {
     func getQuestions() -> [Question] {
-        return Game.shared.questions.shuffled()
+        return Game.shared.questions
     }
 }

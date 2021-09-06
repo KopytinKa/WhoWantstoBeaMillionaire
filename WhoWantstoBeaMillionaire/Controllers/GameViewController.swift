@@ -24,7 +24,7 @@ class GameViewController: UIViewController {
     private var orderOfQuestionsStrategy: OrderOfQuestionsStrategy {
         switch Game.shared.difficulty {
         case .random:
-            return RandowOrderOfQuestionsStrategy()
+            return RandomOrderOfQuestionsStrategy()
         case .sequential:
             return SequentialOrderOfQuestionsStrategy()
         }

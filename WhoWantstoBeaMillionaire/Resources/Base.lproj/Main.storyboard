@@ -206,8 +206,8 @@
                                 <rect key="frame" x="20" y="124" width="374" height="32"/>
                                 <color key="backgroundColor" red="0.63529413940000001" green="0.1647058874" blue="0.70588237050000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <segments>
-                                    <segment title="Случайный"/>
                                     <segment title="Последовательный"/>
+                                    <segment title="Случайный"/>
                                 </segments>
                                 <color key="selectedSegmentTintColor" red="0.96862745289999996" green="0.85490196939999996" blue="0.37647059560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
